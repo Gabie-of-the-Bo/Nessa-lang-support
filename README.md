@@ -1,2 +1,1 @@
-# Nessa-lang-support
-Nessa VSCode extension
+Basic regex-based syntax highlighting for Nessa 

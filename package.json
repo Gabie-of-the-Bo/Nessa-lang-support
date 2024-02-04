@@ -2,7 +2,12 @@
     "name": "nessa-language-support",
     "displayName": "Nessa Language Support",
     "description": "Basic support for the Nessa Programming Language",
-    "version": "0.0.1",
+    "publisher": "NessaLang",
+    "icon": "img/icon.png",
+    "repository": {
+        "url": "https://github.com/Gabie-of-the-Bo/Nessa-lang-support"
+    },
+    "version": "0.1.0",
     "engines": {
         "vscode": "^1.62.0"
     },

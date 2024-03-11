@@ -78,7 +78,7 @@
 		"keywords": {
 			"patterns": [{
 				"name": "keyword.control.nessa",
-				"match": "\\b(class|syntax|let|fn|in|op|unary|binary|nary|prefix|postfix|from|to|if|else|while|for|return|do|break)\\b"
+				"match": "\\b(class|syntax|let|fn|in|op|unary|binary|nary|prefix|postfix|from|to|if|else|while|for|return|do|break|continue)\\b"
 			}]
 		},
 

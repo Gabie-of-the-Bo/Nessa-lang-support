@@ -85,7 +85,7 @@
 		"variable-definition": {
 			"patterns": [
 				{
-					"match": "(let)\\s+([a-zA-Z_]*[a-zA-Z0-9_]+)(\\s*:\\s*(.+))\\s*=",
+					"match": "(let)\\s+((?:\\p{L}|_)*(?:\\p{L}|\\p{N}|_)+)(\\s*:\\s*(.+))\\s*=",
 					"captures": {
 						"1": {
 							"name": "keyword.control.nessa"
@@ -118,7 +118,7 @@
 						"4": {
 							"patterns": [
 								{
-									"match": "[a-zA-Z_]*[a-zA-Z0-9_]+",
+									"match": "(?:\\p{L}|_)*(?:\\p{L}|\\p{N}|_)+",
 									"name": "entity.name.function"
 								},
 								{
@@ -173,7 +173,7 @@
 		"function-definition": {
 			"patterns": [
 				{
-					"match": "(fn)\\s*(<(.+)>)?\\s+([a-zA-Z_]*[a-zA-Z0-9_]+)\\s*\\((.*)\\)(\\s*->\\s*(.+)\\s*)?",
+					"match": "(fn)\\s*(<(.+)>)?\\s+((?:\\p{L}|_)*(?:\\p{L}|\\p{N}|_)+)\\s*\\((.*)\\)(\\s*->\\s*(.+)\\s*)?",
 					"captures": {
 						"1": {
 							"name": "keyword.control.nessa"
@@ -187,11 +187,11 @@
 						"5": {
 							"patterns": [
 								{
-									"match": "([a-zA-Z_]*[a-zA-Z0-9_]+)(?=\\s*:)",
+									"match": "((?:\\p{L}|_)*(?:\\p{L}|\\p{N}|_)+)(?=\\s*:)",
 									"name": "variable.other"
 								},
 								{
-									"match": "(?<=:)\\s*([^:]+?)(?=\\s*,\\s*[a-zA-Z_]*[a-zA-Z0-9_]+\\s*:)",
+									"match": "(?<=:)\\s*([^:]+?)(?=\\s*,\\s*(?:\\p{L}|_)*(?:\\p{L}|\\p{N}|_)+\\s*:)",
 									"captures": {
 										"1": {
 											"patterns": [{ "include": "#type" }]
@@ -233,11 +233,11 @@
 						"5": {
 							"patterns": [
 								{
-									"match": "([a-zA-Z_]*[a-zA-Z0-9_]+)(?=\\s*:)",
+									"match": "((?:\\p{L}|_)*(?:\\p{L}|\\p{N}|_)+)(?=\\s*:)",
 									"name": "variable.other"
 								},
 								{
-									"match": "(?<=:)\\s*([^:]+?)(?=\\s*,\\s*[a-zA-Z_]*[a-zA-Z0-9_]+\\s*:)",
+									"match": "(?<=:)\\s*([^:]+?)(?=\\s*,\\s*(?:\\p{L}|_)*(?:\\p{L}|\\p{N}|_)+\\s*:)",
 									"captures": {
 										"1": {
 											"patterns": [{ "include": "#type" }]
@@ -276,11 +276,11 @@
 						"4": {
 							"patterns": [
 								{
-									"match": "([a-zA-Z_]*[a-zA-Z0-9_]+)(?=\\s*:)",
+									"match": "((?:\\p{L}|_)*(?:\\p{L}|\\p{N}|_)+)(?=\\s*:)",
 									"name": "variable.other"
 								},
 								{
-									"match": "(?<=:)\\s*([^:]+?)(?=\\s*,\\s*[a-zA-Z_]*[a-zA-Z0-9_]+\\s*:)",
+									"match": "(?<=:)\\s*([^:]+?)(?=\\s*,\\s*(?:\\p{L}|_)*(?:\\p{L}|\\p{N}|_)+\\s*:)",
 									"captures": {
 										"1": {
 											"patterns": [{ "include": "#type" }]
@@ -322,11 +322,11 @@
 						"4": {
 							"patterns": [
 								{
-									"match": "([a-zA-Z_]*[a-zA-Z0-9_]+)(?=\\s*:)",
+									"match": "((?:\\p{L}|_)*(?:\\p{L}|\\p{N}|_)+)(?=\\s*:)",
 									"name": "variable.other"
 								},
 								{
-									"match": "(?<=:)\\s*([^:]+?)(?=\\s*,\\s*[a-zA-Z_]*[a-zA-Z0-9_]+\\s*:)",
+									"match": "(?<=:)\\s*([^:]+?)(?=\\s*,\\s*(?:\\p{L}|_)*(?:\\p{L}|\\p{N}|_)+\\s*:)",
 									"captures": {
 										"1": {
 											"patterns": [{ "include": "#type" }]
@@ -349,11 +349,11 @@
 						"6": {
 							"patterns": [
 								{
-									"match": "([a-zA-Z_]*[a-zA-Z0-9_]+)(?=\\s*:)",
+									"match": "((?:\\p{L}|_)*(?:\\p{L}|\\p{N}|_)+)(?=\\s*:)",
 									"name": "variable.other"
 								},
 								{
-									"match": "(?<=:)\\s*([^:]+?)(?=\\s*,\\s*[a-zA-Z_]*[a-zA-Z0-9_]+\\s*:)",
+									"match": "(?<=:)\\s*([^:]+?)(?=\\s*,\\s*(?:\\p{L}|_)*(?:\\p{L}|\\p{N}|_)+\\s*:)",
 									"captures": {
 										"1": {
 											"patterns": [{ "include": "#type" }]
@@ -392,11 +392,11 @@
 						"4": {
 							"patterns": [
 								{
-									"match": "([a-zA-Z_]*[a-zA-Z0-9_]+)(?=\\s*:)",
+									"match": "((?:\\p{L}|_)*(?:\\p{L}|\\p{N}|_)+)(?=\\s*:)",
 									"name": "variable.other"
 								},
 								{
-									"match": "(?<=:)\\s*([^:]+?)(?=\\s*,\\s*[a-zA-Z_]*[a-zA-Z0-9_]+\\s*:)",
+									"match": "(?<=:)\\s*([^:]+?)(?=\\s*,\\s*(?:\\p{L}|_)*(?:\\p{L}|\\p{N}|_)+\\s*:)",
 									"captures": {
 										"1": {
 											"patterns": [{ "include": "#type" }]
@@ -416,11 +416,11 @@
 						"5": {
 							"patterns": [
 								{
-									"match": "([a-zA-Z_]*[a-zA-Z0-9_]+)(?=\\s*:)",
+									"match": "((?:\\p{L}|_)*(?:\\p{L}|\\p{N}|_)+)(?=\\s*:)",
 									"name": "variable.other"
 								},
 								{
-									"match": "(?<=:)\\s*([^:]+?)(?=\\s*,\\s*[a-zA-Z_]*[a-zA-Z0-9_]+\\s*:)",
+									"match": "(?<=:)\\s*([^:]+?)(?=\\s*,\\s*(?:\\p{L}|_)*(?:\\p{L}|\\p{N}|_)+\\s*:)",
 									"captures": {
 										"1": {
 											"patterns": [{ "include": "#type" }]
@@ -445,7 +445,7 @@
 		"class-definition": {
 			"patterns": [
 				{
-					"match": "(class)\\s+([a-zA-Z_]*[a-zA-Z0-9_]+)\\s*(<(.+)>)?\\s*\\{",
+					"match": "(class)\\s+((?:\\p{L}|_)*(?:\\p{L}|\\p{N}|_)+)\\s*(<(.+)>)?\\s*\\{",
 					"captures": {
 						"1": {
 							"name": "keyword.control.nessa"
@@ -464,7 +464,7 @@
 		"interface-definition": {
 			"patterns": [
 				{
-					"match": "(interface)\\s+([a-zA-Z_]*[a-zA-Z0-9_]+)\\s*(<(.+)>)?\\s*\\{",
+					"match": "(interface)\\s+((?:\\p{L}|_)*(?:\\p{L}|\\p{N}|_)+)\\s*(<(.+)>)?\\s*\\{",
 					"captures": {
 						"1": {
 							"name": "keyword.control.nessa"
@@ -483,7 +483,7 @@
 		"interface-implementation": {
 			"patterns": [
 				{
-					"match": "(implement)\\s*(<(.+?)>)?\\s+([a-zA-Z_]*[a-zA-Z0-9_]+)\\s*(<(.+)>)?\\s*(for)\\s+(.*?);",
+					"match": "(implement)\\s*(<(.+?)>)?\\s+((?:\\p{L}|_)*(?:\\p{L}|\\p{N}|_)+)\\s*(<(.+)>)?\\s*(for)\\s+(.*?);",
 					"captures": {
 						"1": {
 							"name": "keyword.control.nessa"
@@ -511,7 +511,7 @@
 		"type-definition": {
 			"patterns": [
 				{
-					"match": "(type)\\s+([a-zA-Z_]*[a-zA-Z0-9_]+)\\s*(<(.+)>)?\\s*=\\s*(.+)\\s*",
+					"match": "(type)\\s+((?:\\p{L}|_)*(?:\\p{L}|\\p{N}|_)+)\\s*(<(.+)>)?\\s*=\\s*(.+)\\s*",
 					"captures": {
 						"1": {
 							"name": "keyword.control.nessa"
@@ -556,7 +556,7 @@
 					}
 				},
 				{
-					"match": ",\\s*([a-zA-Z_]*[a-zA-Z0-9_]+)\\s*\\)",
+					"match": ",\\s*((?:\\p{L}|_)*(?:\\p{L}|\\p{N}|_)+)\\s*\\)",
 					"captures": {
 						"1": {
 							"name": "variable.parameter"
@@ -568,7 +568,7 @@
 					"name": "support.type"
 				},
 				{
-					"match": "<[a-zA-Z_]+>",
+					"match": "<\\p{L}+>",
 					"name": "support.type"
 				}
 			]
@@ -598,7 +598,7 @@
 		"attribute-definition": {
 			"patterns": [
 				{
-					"match": "(?<!\\()([a-zA-Z_]*[a-zA-Z0-9_]+)(\\s*:(?!=)\\s*(.+))\\s*;",
+					"match": "(?<!\\()((?:\\p{L}|_)*(?:\\p{L}|\\p{N}|_)+)(\\s*:(?!=)\\s*(.+))\\s*;",
 					"captures": {
 						"1": {
 							"name": "variable.other"
@@ -614,7 +614,7 @@
 		"function-call": {
 			"patterns": [
 				{
-					"match": "([a-zA-Z_]*[a-zA-Z0-9_]+)\\s*(<([^:]+?)>)?\\s*\\(",
+					"match": "((?:\\p{L}|_)*(?:\\p{L}|\\p{N}|_)+)\\s*(<([^:]+?)>)?\\s*\\(",
 					"captures": {
 						"1": {
 							"name": "entity.name.function"
@@ -630,7 +630,7 @@
 		"variable-ref": {
 			"patterns": [
 				{
-					"match": "[a-zA-Z_]*[a-zA-Z0-9_]+",
+					"match": "(?:\\p{L}|_)*(?:\\p{L}|\\p{N}|_)+",
 					"name": "variable.other"
 				}
 			]
@@ -639,7 +639,7 @@
 		"type": {
 			"patterns": [
 				{
-					"match": "(&|@)?('[a-zA-Z_]*[a-zA-Z0-9_]+)",
+					"match": "(&|@)?('(?:\\p{L}|_)*(?:\\p{L}|\\p{N}|_)+)",
 					"captures": {
 						"1":{
 							"name": "keyword.operator"
@@ -651,7 +651,7 @@
 				},
 
 				{
-					"match": "(&|@)?('?[a-zA-Z_]*[a-zA-Z0-9_]+)(\\s*<([^:]+)>)?",
+					"match": "(&|@)?('?(?:\\p{L}|_)*(?:\\p{L}|\\p{N}|_)+)(\\s*<([^:]+)>)?",
 					"captures": {
 						"1": {
 							"name": "keyword.operator"

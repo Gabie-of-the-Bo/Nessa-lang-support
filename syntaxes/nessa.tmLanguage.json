@@ -4,6 +4,7 @@
 	"patterns": [
 		{ "include": "#comments" },
 		{ "include": "#literals" },
+		{ "include": "#annotation" },
 		{ "include": "#variable-definition" },
 		{ "include": "#function-definition" },
 		{ "include": "#operator-definition" },
@@ -79,6 +80,17 @@
 			"patterns": [{
 				"name": "keyword.control.nessa",
 				"match": "\\b(class|syntax|let|fn|in|op|unary|binary|nary|prefix|postfix|from|to|if|else|while|for|return|do|break|continue|block|expr)\\b"
+			}]
+		},
+
+		"annotation": {
+			"patterns": [{
+				"match": "@((?:\\p{L}|_)*(?:\\p{L}|\\p{N}|_)+)(?=\\s*(\n|\\())",
+				"captures": {
+					"1": {
+						"name": "support.class"
+					}
+				}
 			}]
 		},
 

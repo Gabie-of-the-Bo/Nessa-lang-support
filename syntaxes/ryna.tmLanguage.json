@@ -1,6 +1,6 @@
 {
 	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
-	"name": "Nessa",
+	"name": "Ryna",
 	"patterns": [
 		{ "include": "#comments" },
 		{ "include": "#literals" },
@@ -59,18 +59,18 @@
 					"match": "\\b0x([0-9a-fA-F])+\\b"
 				},
 				{
-					"name": "string.quoted.double.nessa",
+					"name": "string.quoted.double.ryna",
 					"begin": "\"",
 					"end": "\"",
 					"patterns": [
 						{
-							"name": "constant.character.escape.nessa",
+							"name": "constant.character.escape.ryna",
 							"match": "\\\\."
 						}
 					]
 				},
 				{
-					"name": "constant.character.nessa",
+					"name": "constant.character.ryna",
 					"match": "'\\?.'"
 				}
 			]
@@ -78,7 +78,7 @@
 
 		"keywords": {
 			"patterns": [{
-				"name": "keyword.control.nessa",
+				"name": "keyword.control.ryna",
 				"match": "\\b(class|syntax|let|fn|in|op|unary|binary|nary|prefix|postfix|from|to|if|else|while|for|return|do|break|continue|block|expr)\\b"
 			}]
 		},
@@ -100,7 +100,7 @@
 					"match": "(let)\\s+((?:\\p{L}|_)*(?:\\p{L}|\\p{N}|_)+)(\\s*:\\s*(.+))\\s*=",
 					"captures": {
 						"1": {
-							"name": "keyword.control.nessa"
+							"name": "keyword.control.ryna"
 						},
 						"2": {
 							"name": "variable.other"
@@ -119,13 +119,13 @@
 					"match": "(import)\\s*(prefix|postfix|binary|nary)?\\s*(class|fn|interface|syntax|op)?\\s*(.*)\\s*(from)\\s*(.*);",
 					"captures": {
 						"1": {
-							"name": "keyword.control.nessa"
+							"name": "keyword.control.ryna"
 						},
 						"2": {
-							"name": "keyword.control.nessa"
+							"name": "keyword.control.ryna"
 						},
 						"3": {
-							"name": "keyword.control.nessa"
+							"name": "keyword.control.ryna"
 						},
 						"4": {
 							"patterns": [
@@ -134,12 +134,12 @@
 									"name": "entity.name.function"
 								},
 								{
-									"name": "string.quoted.double.nessa",
+									"name": "string.quoted.double.ryna",
 									"begin": "\"",
 									"end": "\"",
 									"patterns": [
 										{
-											"name": "constant.character.escape.nessa",
+											"name": "constant.character.escape.ryna",
 											"match": "\\\\."
 										}
 									]
@@ -147,7 +147,7 @@
 							]
 						},
 						"5": {
-							"name": "keyword.control.nessa"
+							"name": "keyword.control.ryna"
 						},
 						"6": {
 							"name": "string.unquoted"
@@ -163,13 +163,13 @@
 					"match": "(unary|binary|nary)\\s*(prefix|postfix|right)?\\s*(op)\\s*(\".*?\").*\\((\\s*[0-9]*\\s*)\\);",
 					"captures": {
 						"1": {
-							"name": "keyword.control.nessa"
+							"name": "keyword.control.ryna"
 						},
 						"2": {
-							"name": "keyword.control.nessa"
+							"name": "keyword.control.ryna"
 						},
 						"3": {
-							"name": "keyword.control.nessa"
+							"name": "keyword.control.ryna"
 						},
 						"4": {
 							"name": "string.quoted.double"
@@ -188,13 +188,13 @@
 					"match": "(fn)\\s*(<(.+)>)?\\s+((?:\\p{L}|_)*(?:\\p{L}|\\p{N}|_)+)\\s*\\((.*)\\)(\\s*->\\s*(.+)\\s*)?",
 					"captures": {
 						"1": {
-							"name": "keyword.control.nessa"
+							"name": "keyword.control.ryna"
 						},
 						"3": {
 							"patterns": [{ "include": "#type" }]
 						},
 						"4": {
-							"name": "entity.name.function.nessa"
+							"name": "entity.name.function.ryna"
 						},
 						"5": {
 							"patterns": [
@@ -234,7 +234,7 @@
 					"match": "(op)\\s*(<(.+)>)?\\s+(.+?)\\s*\\((.*)\\)(\\s*->\\s*(.+)\\s*)?",
 					"captures": {
 						"1": {
-							"name": "keyword.control.nessa"
+							"name": "keyword.control.ryna"
 						},
 						"3": {
 							"patterns": [{ "include": "#type" }]
@@ -280,7 +280,7 @@
 					"match": "(op)\\s*(<(.+)>)?\\s+\\((.*)\\)\\s*([^ ]+)(\\s*->\\s*(.+)\\s*)?",
 					"captures": {
 						"1": {
-							"name": "keyword.control.nessa"
+							"name": "keyword.control.ryna"
 						},
 						"3": {
 							"patterns": [{ "include": "#type" }]
@@ -326,7 +326,7 @@
 					"match": "(op)\\s*(<(.+)>)?\\s+\\((.*?:[^:]+)\\)\\s*([^ ]+)\\s*\\((.*?:[^:]+)\\)(\\s*->\\s*(.+)\\s*)?",
 					"captures": {
 						"1": {
-							"name": "keyword.control.nessa"
+							"name": "keyword.control.ryna"
 						},
 						"3": {
 							"patterns": [{ "include": "#type" }]
@@ -396,7 +396,7 @@
 					"match": "(op)\\s*(<(.+)>)?\\s+\\((.*?:[^:]+)\\)(.*?)\\s*(;|\\{)",
 					"captures": {
 						"1": {
-							"name": "keyword.control.nessa"
+							"name": "keyword.control.ryna"
 						},
 						"3": {
 							"patterns": [{ "include": "#type" }]
@@ -460,7 +460,7 @@
 					"match": "(class)\\s+((?:\\p{L}|_)*(?:\\p{L}|\\p{N}|_)+)\\s*(<(.+)>)?\\s*\\{",
 					"captures": {
 						"1": {
-							"name": "keyword.control.nessa"
+							"name": "keyword.control.ryna"
 						},
 						"2": {
 							"name": "entity.name.class"
@@ -479,7 +479,7 @@
 					"match": "(interface)\\s+((?:\\p{L}|_)*(?:\\p{L}|\\p{N}|_)+)\\s*(<(.+)>)?\\s*\\{",
 					"captures": {
 						"1": {
-							"name": "keyword.control.nessa"
+							"name": "keyword.control.ryna"
 						},
 						"2": {
 							"name": "entity.name.class"
@@ -498,7 +498,7 @@
 					"match": "(implement)\\s*(<(.+?)>)?\\s+((?:\\p{L}|_)*(?:\\p{L}|\\p{N}|_)+)\\s*(<(.+)>)?\\s*(for)\\s+(.*?);",
 					"captures": {
 						"1": {
-							"name": "keyword.control.nessa"
+							"name": "keyword.control.ryna"
 						},
 						"3": {
 							"patterns": [{ "include": "#type" }]
@@ -510,7 +510,7 @@
 							"patterns": [{ "include": "#type" }]
 						},
 						"7": {
-							"name": "keyword.control.nessa"
+							"name": "keyword.control.ryna"
 						},
 						"8": {
 							"patterns": [{ "include": "#type" }]
@@ -526,7 +526,7 @@
 					"match": "(type)\\s+((?:\\p{L}|_)*(?:\\p{L}|\\p{N}|_)+)\\s*(<(.+)>)?\\s*=\\s*(.+)\\s*",
 					"captures": {
 						"1": {
-							"name": "keyword.control.nessa"
+							"name": "keyword.control.ryna"
 						},
 						"2": {
 							"name": "entity.name.class"
@@ -542,15 +542,15 @@
 			]
 		},
 
-		"ndl": {
+		"rdl": {
 			"patterns": [
 				{
-					"name": "string.quoted.double.nessa",
+					"name": "string.quoted.double.ryna",
 					"begin": "\"",
 					"end": "\"",
 					"patterns": [
 						{
-							"name": "constant.character.escape.nessa",
+							"name": "constant.character.escape.ryna",
 							"match": "\\\\."
 						}
 					]
@@ -592,14 +592,14 @@
 					"match": "(syntax)\\s+(from)\\s+(.+);",
 					"captures": {
 						"1": {
-							"name": "keyword.control.nessa"
+							"name": "keyword.control.ryna"
 						},
 						"2": {
-							"name": "keyword.control.nessa"
+							"name": "keyword.control.ryna"
 						},
 						"3": {
 							"patterns": [
-								{ "include": "#ndl" }
+								{ "include": "#rdl" }
 							]
 						}
 					}
@@ -680,5 +680,5 @@
 		}
 	},
 
-	"scopeName": "source.nessa"
+	"scopeName": "source.ryna"
 }

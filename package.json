@@ -1,11 +1,11 @@
 {
-    "name": "nessa-language-support",
-    "displayName": "Nessa Language Support",
-    "description": "Basic support for the Nessa Programming Language",
-    "publisher": "NessaLang",
+    "name": "ryna-language-support",
+    "displayName": "Ryna Language Support",
+    "description": "Basic support for the Ryna Programming Language",
+    "publisher": "RynaLanguage",
     "icon": "img/icon.png",
     "repository": {
-        "url": "https://github.com/Gabie-of-the-Bo/Nessa-lang-support"
+        "url": "https://github.com/Gabie-of-the-Bo/Ryna-lang-support"
     },
     "version": "0.1.6",
     "engines": {
@@ -16,15 +16,15 @@
     ],
     "contributes": {
         "languages": [{
-            "id": "nessa",
-            "aliases": ["Nessa", "nessa"],
-            "extensions": [".nessa"],
+            "id": "ryna",
+            "aliases": ["Ryna", "ryna"],
+            "extensions": [".ryna"],
             "configuration": "./language-configuration.json"
         }],
         "grammars": [{
-            "language": "nessa",
-            "scopeName": "source.nessa",
-            "path": "./syntaxes/nessa.tmLanguage.json"
+            "language": "ryna",
+            "scopeName": "source.ryna",
+            "path": "./syntaxes/ryna.tmLanguage.json"
         }]
     }
 }

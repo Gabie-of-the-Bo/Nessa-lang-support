@@ -1,1 +1,1 @@
-Basic regex-based syntax highlighting for Nessa 
+Basic regex-based syntax highlighting for Ryna 

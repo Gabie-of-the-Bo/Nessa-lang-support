@@ -1,13 +1,13 @@
 {
     "name": "ryna-language-support",
-    "displayName": "Ryna Language Support",
+    "displayName": "Ryna Language",
     "description": "Basic support for the Ryna Programming Language",
     "publisher": "RynaLanguage",
     "icon": "img/icon.png",
     "repository": {
         "url": "https://github.com/Gabie-of-the-Bo/Ryna-lang-support"
     },
-    "version": "0.1.6",
+    "version": "0.1.7",
     "engines": {
         "vscode": "^1.62.0"
     },
